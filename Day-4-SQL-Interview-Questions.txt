@@ -1,0 +1,70 @@
+SQL Interview Questions – Day 4
+
+11. What is an Index in SQL?
+
+Simple Answer
+An Index is a database object that helps SQL find and retrieve rows faster. It improves read/query performance, but indexes can require extra storage and may slow down INSERT, UPDATE, and DELETE operations.
+
+Example
+CREATE INDEX idx_employee_name
+ON employees(name);
+
+
+12. What is a Self Join?
+
+Simple Answer
+A Self Join is a join where a table is joined with itself. It is useful when rows in the same table have a relationship with each other, such as employees and their managers.
+
+Example
+SELECT e.name AS employee, m.name AS manager
+FROM employees e
+LEFT JOIN employees m
+ON e.manager_id = m.employee_id;
+
+
+13. What is a View in SQL?
+
+Simple Answer
+A View is a virtual table created from the result of a SQL query. It can simplify complex queries and control which data users can access.
+
+Example
+CREATE VIEW employee_details AS
+SELECT name, department, salary
+FROM employees;
+
+
+14. What is a Composite Key?
+
+Simple Answer
+A Composite Key is a key made up of two or more columns that together uniquely identify a row in a table. It is useful when a single column cannot uniquely identify a record.
+
+Example
+CREATE TABLE enrollment (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id)
+);
+
+
+15. What is the difference between IN and EXISTS?
+
+Simple Answer
+IN checks whether a value matches any value returned by a subquery or a specified list. EXISTS checks whether the subquery returns at least one row.
+
+Example
+SELECT name
+FROM employees
+WHERE department_id IN (
+    SELECT department_id
+    FROM departments
+    WHERE location = 'Hyderabad'
+);
+
+EXISTS example:
+SELECT name
+FROM employees e
+WHERE EXISTS (
+    SELECT 1
+    FROM departments d
+    WHERE d.department_id = e.department_id
+);
