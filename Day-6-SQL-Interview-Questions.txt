@@ -1,0 +1,68 @@
+SQL Interview Questions – Day 6
+
+21. What is an Alias in SQL?
+
+Simple Answer
+An Alias is a temporary name given to a table or column to make a query easier to read and understand. The AS keyword is commonly used to create an alias.
+
+Example
+SELECT name AS employee_name,
+       salary AS monthly_salary
+FROM employees;
+
+
+22. What is the difference between a database and a table?
+
+Simple Answer
+A database is a collection of related data and objects such as tables, views, and procedures. A table is a structure inside a database that stores data in rows and columns.
+
+Example
+A company database may contain tables such as Employees, Departments, and Projects.
+
+
+23. What is a CROSS JOIN?
+
+Simple Answer
+A CROSS JOIN returns every possible combination of rows from the first table with rows from the second table. If one table has 3 rows and another has 4 rows, the result contains 12 combinations.
+
+Example
+SELECT e.name, d.department_name
+FROM employees e
+CROSS JOIN departments d;
+
+
+24. What is a transaction in SQL?
+
+Simple Answer
+A transaction is a group of one or more SQL operations treated as a single unit of work. A transaction can be saved using COMMIT or undone using ROLLBACK.
+
+Example
+START TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 1000
+WHERE account_id = 1;
+
+UPDATE accounts
+SET balance = balance + 1000
+WHERE account_id = 2;
+
+COMMIT;
+
+
+25. What is the difference between COMMIT and ROLLBACK?
+
+Simple Answer
+COMMIT permanently saves the changes made during a transaction. ROLLBACK cancels the changes made during the transaction and returns the data to its previous state.
+
+Example
+START TRANSACTION;
+
+UPDATE employees
+SET salary = salary + 5000
+WHERE employee_id = 101;
+
+COMMIT;
+
+If the change should be cancelled instead:
+ROLLBACK;
