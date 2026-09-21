@@ -1,0 +1,64 @@
+SQL Interview Questions – Day 7
+
+26. What is a Stored Procedure in SQL?
+
+Simple Answer
+A Stored Procedure is a set of SQL statements stored in the database that can be executed whenever needed. It is useful for reusing commonly performed database operations.
+
+Example
+CREATE PROCEDURE GetEmployees()
+BEGIN
+    SELECT * FROM employees;
+END;
+
+
+27. What is a Trigger in SQL?
+
+Simple Answer
+A Trigger is a database object that automatically executes when a specified event occurs on a table, such as INSERT, UPDATE, or DELETE.
+
+Example
+CREATE TRIGGER before_employee_insert
+BEFORE INSERT ON employees
+FOR EACH ROW
+SET NEW.created_at = CURRENT_TIMESTAMP;
+
+
+28. What is a Window Function in SQL?
+
+Simple Answer
+A Window Function performs a calculation across related rows without combining them into a single row. Common examples include ROW_NUMBER(), RANK(), and DENSE_RANK().
+
+Example
+SELECT name,
+       salary,
+       RANK() OVER (ORDER BY salary DESC) AS salary_rank
+FROM employees;
+
+
+29. What is the difference between RANK() and DENSE_RANK()?
+
+Simple Answer
+Both functions assign ranks to rows based on their values. RANK() leaves gaps after tied values, while DENSE_RANK() does not leave gaps.
+
+Example
+SELECT name,
+       salary,
+       RANK() OVER (ORDER BY salary DESC) AS rank_value,
+       DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank_value
+FROM employees;
+
+
+30. What is a CTE in SQL?
+
+Simple Answer
+CTE stands for Common Table Expression. It is a temporary named result set created using the WITH keyword. It makes complex queries easier to read and organize.
+
+Example
+WITH high_salary AS (
+    SELECT name, salary
+    FROM employees
+    WHERE salary > 50000
+)
+SELECT *
+FROM high_salary;
