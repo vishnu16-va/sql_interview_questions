@@ -1,0 +1,67 @@
+SQL Interview Questions – Day 5
+
+16. What is a SQL constraint?
+
+Simple Answer
+A constraint is a rule applied to a column or table to control the type of data that can be stored. Common constraints include PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, and DEFAULT.
+
+Example
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT CHECK (age >= 18)
+);
+
+
+17. What is the CHECK constraint in SQL?
+
+Simple Answer
+The CHECK constraint makes sure that values inserted into a column satisfy a specified condition. If the condition is false, the database rejects the value.
+
+Example
+CREATE TABLE employees (
+    employee_id INT,
+    age INT CHECK (age >= 18)
+);
+
+
+18. What is the LIMIT clause in SQL?
+
+Simple Answer
+LIMIT is used to restrict the number of rows returned by a query. It is commonly used when we want to retrieve only the first few records.
+
+Example
+SELECT *
+FROM employees
+LIMIT 5;
+
+
+19. What is the CASE statement in SQL?
+
+Simple Answer
+The CASE statement is used to apply conditional logic in SQL. It works similar to if-else logic and returns a value based on a condition.
+
+Example
+SELECT name,
+       salary,
+       CASE
+           WHEN salary >= 50000 THEN 'High'
+           WHEN salary >= 30000 THEN 'Medium'
+           ELSE 'Low'
+       END AS salary_level
+FROM employees;
+
+
+20. What is a correlated subquery?
+
+Simple Answer
+A correlated subquery is a subquery that depends on a value from the outer query. The inner query is evaluated in relation to each row processed by the outer query.
+
+Example
+SELECT e.name, e.salary
+FROM employees e
+WHERE e.salary > (
+    SELECT AVG(e2.salary)
+    FROM employees e2
+    WHERE e2.department_id = e.department_id
+);
