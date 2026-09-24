@@ -30,7 +30,7 @@ DAY 03:- SQL QUESTIONS
 
 DAY 04:- SQL QUESTIONS
 
-16. What is an Index in SQL?
+16. What is the offset clause in SQL?
 17. What is a Self Join?
 18. What is a View in SQL?
 19. What is a Composite Key?
