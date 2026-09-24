@@ -20,11 +20,12 @@ DAY 02:- SQL QUESTIONS
 
 DAY 03:- SQL QUESTIONS
 
-11. What is the difference between WHERE and HAVING?
-12. What is a Primary Key?
-13. What are Aggregate Functions in SQL?
+11. What is a SQL JOIN?
+12. What is the difference between a Primary Key and a UNIQUE Key?
+13. What is Normalization in SQL?
 14. What is the difference between CHAR and VARCHAR?
 15. What is DISTINCT in SQL?
+
 
 
 DAY 04:- SQL QUESTIONS
