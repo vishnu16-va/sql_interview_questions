@@ -1,0 +1,19 @@
+DAY-5: GROUPING AND DATA MODIFICATION
+
+1. What is GROUP BY?
+Answer: GROUP BY combines rows with the same values into groups, usually for aggregate calculations.
+Example: SELECT department_id, AVG(marks) FROM students GROUP BY department_id;
+
+2. Can GROUP BY be used without an aggregate function?
+Answer: Yes. It can group rows based on selected columns, although DISTINCT is often clearer when only unique values are required.
+
+3. How do you insert a new record?
+Answer: Use INSERT INTO with column names and values.
+Example: INSERT INTO students(student_id, student_name, marks) VALUES (1, 'Vishnu', 85);
+
+4. How do you update existing records?
+Answer: Use UPDATE with SET and a WHERE condition.
+Example: UPDATE students SET marks = 90 WHERE student_id = 1;
+
+5. Why is WHERE important in UPDATE and DELETE?
+Answer: WHERE limits the affected rows. Without it, UPDATE changes every row and DELETE removes every row from the table.
