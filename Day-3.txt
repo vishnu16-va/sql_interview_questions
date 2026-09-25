@@ -1,0 +1,21 @@
+DAY-3: SELECT, FILTERING, AND SORTING
+
+1. How do you retrieve selected columns from a table?
+Answer: Use SELECT with the required column names.
+Example: SELECT student_name, marks FROM students;
+
+2. What is the WHERE clause?
+Answer: WHERE filters rows based on a condition.
+Example: SELECT * FROM students WHERE marks > 80;
+
+3. What is the ORDER BY clause?
+Answer: ORDER BY sorts query results in ascending or descending order.
+Example: SELECT * FROM students ORDER BY marks DESC;
+
+4. What is the difference between WHERE and HAVING?
+Answer: WHERE filters individual rows before grouping, while HAVING filters groups after GROUP BY.
+Example: HAVING AVG(marks) > 75.
+
+5. How do you remove duplicate values from a result?
+Answer: Use DISTINCT with SELECT.
+Example: SELECT DISTINCT department_id FROM students;
