@@ -1,0 +1,19 @@
+DAY-6: JOINS
+
+1. What is a JOIN?
+Answer: A JOIN combines rows from two or more tables using a related column or condition.
+Example: Joining students and departments using department_id.
+
+2. What is an INNER JOIN?
+Answer: INNER JOIN returns only rows that have matching values in both tables.
+Example: SELECT s.student_name, d.department_name FROM students s INNER JOIN departments d ON s.department_id = d.department_id;
+
+3. What is a LEFT JOIN?
+Answer: LEFT JOIN returns all rows from the left table and matching rows from the right table. If there is no match, right-table columns contain NULL.
+
+4. What is a self join?
+Answer: A self join joins a table to itself. It is useful for hierarchical data such as employees and managers.
+Example: employees e JOIN employees m ON e.manager_id = m.employee_id.
+
+5. What is the difference between ON and WHERE in a join?
+Answer: ON defines how tables are matched. WHERE filters the result after the join. In an outer join, moving a condition from ON to WHERE can remove unmatched rows.
