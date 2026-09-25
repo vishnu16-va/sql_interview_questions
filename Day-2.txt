@@ -1,0 +1,20 @@
+DAY-2: SQL COMMANDS AND KEYS
+
+1. What are DDL, DML, DQL, DCL, and TCL?
+Answer: DDL defines database structures, DML modifies data, DQL retrieves data, DCL controls permissions, and TCL manages transactions.
+Examples: CREATE, INSERT, SELECT, GRANT, and COMMIT.
+
+2. What is a primary key?
+Answer: A primary key uniquely identifies each row in a table. It cannot contain NULL values or duplicates.
+Example: student_id INT PRIMARY KEY.
+
+3. What is a foreign key?
+Answer: A foreign key is a column that refers to a primary key or unique key in another table. It maintains referential integrity.
+Example: department_id in students may reference departments(department_id).
+
+4. What is a UNIQUE constraint?
+Answer: UNIQUE ensures that all non-NULL values in a column are different. A table can have multiple UNIQUE constraints.
+Example: email VARCHAR(100) UNIQUE.
+
+5. What is the difference between DELETE, TRUNCATE, and DROP?
+Answer: DELETE removes selected rows and can use WHERE. TRUNCATE removes all rows. DROP removes the complete table structure and data.
