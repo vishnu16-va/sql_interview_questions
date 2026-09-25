@@ -1,0 +1,20 @@
+DAY-4: FUNCTIONS AND NULL VALUES
+
+1. What are aggregate functions?
+Answer: Aggregate functions perform calculations on multiple rows and return a result.
+Examples: COUNT(), SUM(), AVG(), MIN(), and MAX().
+
+2. What is the difference between COUNT(*) and COUNT(column_name)?
+Answer: COUNT(*) counts all rows. COUNT(column_name) counts only non-NULL values in that column.
+
+3. What is NULL in SQL?
+Answer: NULL represents a missing, unknown, or unavailable value. It is not the same as zero or an empty string.
+Example: WHERE phone_number IS NULL.
+
+4. How do you replace NULL with another value?
+Answer: Use COALESCE() to return the first non-NULL value.
+Example: SELECT COALESCE(phone_number, 'Not Provided') FROM students;
+
+5. What are scalar functions?
+Answer: Scalar functions operate on one value at a time and return one value for each row.
+Examples: UPPER(), LOWER(), LENGTH(), ROUND(), and CONCAT().
