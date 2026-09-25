@@ -1,0 +1,18 @@
+DAY-10: TRANSACTIONS, PERFORMANCE, AND PRACTICE
+
+1. What are ACID properties?
+Answer: ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties help transactions remain reliable and correct.
+
+2. What is COMMIT?
+Answer: COMMIT permanently saves the changes made by the current transaction.
+Example: COMMIT;
+
+3. What is ROLLBACK?
+Answer: ROLLBACK cancels changes made in the current transaction that have not been committed.
+Example: ROLLBACK;
+
+4. What is a stored procedure?
+Answer: A stored procedure is a named set of SQL statements stored in the database and executed when called. It can accept parameters and contain control logic.
+
+5. How can you improve SQL query performance?
+Answer: Select only required columns, use suitable indexes, filter efficiently, avoid unnecessary joins, inspect execution plans, and avoid functions on indexed columns when possible.
