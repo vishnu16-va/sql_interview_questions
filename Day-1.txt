@@ -1,0 +1,21 @@
+DAY-1: SQL FUNDAMENTALS
+
+1. What is SQL?
+Answer: SQL stands for Structured Query Language. It is used to create, retrieve, update, and delete data in relational databases.
+Example: SELECT * FROM students;
+
+2. What is a database?
+Answer: A database is an organized collection of data that can be stored, managed, and retrieved efficiently.
+Example: A college database may contain student, faculty, and course tables.
+
+3. What is a DBMS?
+Answer: DBMS stands for Database Management System. It is software used to create, manage, and access databases.
+Examples: MySQL, Oracle, PostgreSQL, and SQL Server.
+
+4. What is a relational database?
+Answer: A relational database stores data in tables made of rows and columns. Tables can be connected using keys.
+Example: A student table can be connected to a department table using department_id.
+
+5. What is the difference between a row and a column?
+Answer: A row represents one complete record, while a column represents one attribute of the records.
+Example: In a student table, one student is a row and student_name is a column.
