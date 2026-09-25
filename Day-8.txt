@@ -1,0 +1,19 @@
+DAY-8: INTERMEDIATE SQL CONCEPTS
+
+1. What is a view?
+Answer: A view is a virtual table based on a stored SQL query. It can simplify complex queries and restrict access to selected columns.
+Example: CREATE VIEW high_scorers AS SELECT * FROM students WHERE marks > 80;
+
+2. What is an index?
+Answer: An index is a data structure that can speed up searches, filtering, and joins. It requires additional storage and may slow down data modification.
+
+3. What is a composite index?
+Answer: A composite index is an index created on two or more columns.
+Example: CREATE INDEX idx_dept_marks ON students(department_id, marks);
+
+4. What is a constraint?
+Answer: A constraint is a rule applied to table data to maintain accuracy and integrity.
+Examples: PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, and DEFAULT.
+
+5. What is the difference between CHAR and VARCHAR?
+Answer: CHAR stores fixed-length strings, while VARCHAR stores variable-length strings. VARCHAR is usually suitable for values with different lengths.
