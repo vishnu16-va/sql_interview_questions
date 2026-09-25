@@ -1,0 +1,19 @@
+DAY-7: SUBQUERIES AND SET OPERATORS
+
+1. What is a subquery?
+Answer: A subquery is a query written inside another SQL query. It can be used in SELECT, FROM, WHERE, or HAVING.
+Example: SELECT * FROM students WHERE marks > (SELECT AVG(marks) FROM students);
+
+2. What is the difference between IN and EXISTS?
+Answer: IN compares a value with values returned by a subquery. EXISTS checks whether the subquery returns at least one row.
+
+3. What is a correlated subquery?
+Answer: A correlated subquery depends on a value from the outer query and is logically evaluated for each outer row.
+Example: Finding employees whose salary is above their department average.
+
+4. What is UNION?
+Answer: UNION combines the results of two compatible SELECT queries and removes duplicate rows.
+Example: SELECT city FROM customers UNION SELECT city FROM suppliers;
+
+5. What is the difference between UNION and UNION ALL?
+Answer: UNION removes duplicates, while UNION ALL keeps duplicates and is generally faster because duplicate removal is not performed.
