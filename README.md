@@ -1,73 +1,81 @@
-SQL INTERVIEW QUESTIONS – README
+# SQL INTERVIEW QUESTIONS
 
-DAY 01:- SQL QUESTIONS
+## Day-1: SQL Fundamentals
 
 1. What is SQL?
-2. What is the difference between WHERE and HAVING?
-3. What is a Primary Key?
-4. What is the difference between INNER JOIN and LEFT JOIN?
-5. What is GROUP BY used for?
+2. What is a database?
+3. What is a DBMS?
+4. What is a relational database?
+5. What is the difference between a row and a column?
 
+## Day-2: SQL Commands and Keys
 
-DAY 02:- SQL QUESTIONS
+1. What are DDL, DML, DQL, DCL, and TCL?
+2. What is a primary key?
+3. What is a foreign key?
+4. What is a UNIQUE constraint?
+5. What is the difference between DELETE, TRUNCATE, and DROP?
 
-6. What is a UNIQUE constraint in SQL?
-7. What is the difference between DELETE, TRUNCATE, and DROP?
-8. What is a NULL value in SQL?
-9. What is an aggregate function in SQL?
-10. What is a Foreign Key?
+## Day-3: SELECT, Filtering, and Sorting
 
+1. How do you retrieve selected columns from a table?
+2. What is the WHERE clause?
+3. What is the ORDER BY clause?
+4. What is the difference between WHERE and HAVING?
+5. How do you remove duplicate values from a result?
 
-DAY 03:- SQL QUESTIONS
+## Day-4: Functions and NULL Values
 
-11. What is a SQL JOIN?
-12. What is the difference between a Primary Key and a UNIQUE Key?
-13. What is Normalization in SQL?
-14. What is the difference between CHAR and VARCHAR?
-15. What is DISTINCT in SQL?
+1. What are aggregate functions?
+2. What is the difference between COUNT(*) and COUNT(column_name)?
+3. What is NULL in SQL?
+4. How do you replace NULL with another value?
+5. What are scalar functions?
 
+## Day-5: Grouping and Data Modification
 
+1. What is GROUP BY?
+2. Can GROUP BY be used without an aggregate function?
+3. How do you insert a new record?
+4. How do you update existing records?
+5. Why is WHERE important in UPDATE and DELETE?
 
-DAY 04:- SQL QUESTIONS
+## Day-6: Joins
 
-16. What is the offset clause in SQL?
-17. What is a Self Join?
-18. What is a View in SQL?
-19. What is a Composite Key?
-20. What is the difference between IN and EXISTS?
+1. What is a JOIN?
+2. What is an INNER JOIN?
+3. What is a LEFT JOIN?
+4. What is a self join?
+5. What is the difference between ON and WHERE in a join?
 
+## Day-7: Subqueries and Set Operators
 
-DAY 05:- SQL QUESTIONS
+1. What is a subquery?
+2. What is the difference between IN and EXISTS?
+3. What is a correlated subquery?
+4. What is UNION?
+5. What is the difference between UNION and UNION ALL?
 
-21. What is a SQL constraint?
-22. What is the CHECK constraint in SQL?
-23. What is the LIMIT clause in SQL?
-24. What is the CASE statement in SQL?
-25. What is a correlated subquery?
+## Day-8: Intermediate SQL Concepts
 
+1. What is a view?
+2. What is an index?
+3. What is a composite index?
+4. What is a constraint?
+5. What is the difference between CHAR and VARCHAR?
 
-DAY 06:- SQL QUESTIONS
+## Day-9: Normalization and Transactions
 
-26. What is an Alias in SQL?
-27. What is the difference between a database and a table?
-28. What is a CROSS JOIN?
-29. What is a transaction in SQL?
-30. What is the difference between COMMIT and ROLLBACK?
+1. What is normalization?
+2. What is First Normal Form (1NF)?
+3. What is Second Normal Form (2NF)?
+4. What is Third Normal Form (3NF)?
+5. What is a transaction?
 
+## Day-10: Transactions, Performance, and Practice
 
-DAY 07:- SQL QUESTIONS
-
-31. What is a Stored Procedure in SQL?
-32. What is a Trigger in SQL?
-33. What is a Window Function in SQL?
-34. What is the difference between RANK() and DENSE_RANK()?
-35. What is a CTE in SQL?
-
-
-DAY 08:- SQL QUESTIONS
-
-36. What is the difference between UNION and UNION ALL in SQL?
-37. What is a Subquery in SQL?
-38. What is the NOT NULL constraint in SQL?
-39. What is the ORDER BY clause used for in SQL?
-40. What is normalization in SQL?
+1. What are ACID properties?
+2. What is COMMIT?
+3. What is ROLLBACK?
+4. What is a stored procedure?
+5. How can you improve SQL query performance?
